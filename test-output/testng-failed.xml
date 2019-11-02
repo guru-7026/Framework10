@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Suite]]" parallel="tests">
+  <parameter name="browser" value="firefox"/>
+  <test name="chromeTest(failed)(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Script.logout_script">
+        <methods>
+          <include name="postcondition"/>
+          <include name="precondition"/>
+        </methods>
+      </class> <!-- Script.logout_script -->
+      <class name="Script.create_user_script">
+        <methods>
+          <include name="postcondition"/>
+          <include name="postcondition"/>
+          <include name="create_user"/>
+          <include name="precondition"/>
+          <include name="precondition"/>
+        </methods>
+      </class> <!-- Script.create_user_script -->
+      <class name="Script.login_script1">
+        <methods>
+          <include name="postcondition"/>
+          <include name="postcondition"/>
+          <include name="precondition"/>
+          <include name="precondition"/>
+          <include name="login_script"/>
+        </methods>
+      </class> <!-- Script.login_script1 -->
+    </classes>
+  </test> <!-- chromeTest(failed)(failed) -->
+  <test name="firefoxTest(failed)(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="Script.logout_script">
+        <methods>
+          <include name="logout_script"/>
+          <include name="postcondition"/>
+          <include name="precondition"/>
+        </methods>
+      </class> <!-- Script.logout_script -->
+      <class name="Script.create_user_script">
+        <methods>
+          <include name="postcondition"/>
+          <include name="postcondition"/>
+          <include name="create_user"/>
+          <include name="precondition"/>
+          <include name="precondition"/>
+        </methods>
+      </class> <!-- Script.create_user_script -->
+      <class name="Script.login_script1">
+        <methods>
+          <include name="postcondition"/>
+          <include name="postcondition"/>
+          <include name="precondition"/>
+          <include name="precondition"/>
+          <include name="login_script"/>
+        </methods>
+      </class> <!-- Script.login_script1 -->
+    </classes>
+  </test> <!-- firefoxTest(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->
